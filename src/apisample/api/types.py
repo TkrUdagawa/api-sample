@@ -25,7 +25,7 @@ class RegressionMethod(str, Enum):
 class AnalyzeParameter(BaseModel):
     task: AnalyzeTask
     method: Union[ClassifierMethod, RegressionMethod]
-    
+
 
 class APIResponse(BaseModel):
     message: str

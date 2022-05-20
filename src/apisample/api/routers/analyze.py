@@ -1,4 +1,4 @@
-from fastapi import APIRouter, File, UploadFile
+from fastapi import APIRouter
 
 from ..types import AnalyzeParameter, APIResponse
 
