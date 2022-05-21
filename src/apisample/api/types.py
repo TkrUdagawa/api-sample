@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import Union
+from typing import Union, Optional
 
 from pydantic import BaseModel
 
@@ -30,3 +30,9 @@ class AnalyzeParameter(BaseModel):
 class APIResponse(BaseModel):
     message: str
     status_code: int
+
+
+class Item(BaseModel):
+    id: Optional[str]
+    title: str
+    body: str
